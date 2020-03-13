@@ -1,0 +1,46 @@
+mixin form-card(mixes)
+
+  - const data = require('views/components/form-card/data.js')
+  - const css = require('views/components/form-card/_css.json')
+
+  div(class=css.formCard class=mixes)
+    div(class=css.left)
+      img(class=css.logo src=require('views/components/form-card/img/logo.png') alt='Изображение')
+      img(class=css.bg src=require('views/components/form-card/img/bg.png') alt='Изображение')
+
+    div(class=css.right)
+      h4(class=css.title class='font-gora') Получить карту <br> постоянного клиента
+
+      form(class=css.form class='font-gora')
+        div(class=css.formGroup)
+          div(class=css.inputGroup)
+            input(class=css.input type='text' placeholder='Фамилия' required)
+            label(class=css.label) Фамилия
+            span(class=css.star) *
+          div(class=css.inputGroup)
+            input(class=css.input type='text' placeholder='Имя' required)
+            label(class=css.label) Имя
+            span(class=css.star) *
+
+        div(class=css.formGroup)
+          div(class=css.inputGroup)
+            input(class=css.input type='text' placeholder='Дата рождения' required)
+            label(class=css.label) Дата рождения
+            span(class=css.star) *
+
+          div(class=css.inputGroup)
+            input(class=css.input type='text' placeholder='Номер телефона' required)
+            label(class=css.label) Номер телефона
+            span(class=css.star) *
+
+        div(class=css.formGroup)
+          div(class=css.inputGroup)
+            input(class=css.input type='text' placeholder='E-MAIL')
+            label(class=css.label) E-MAIL
+
+          div(class=css.btnGroup)
+            button(class=css.submit type='submit') Отправить
+            span(class=css.notice) Нажимая кнопку «Отправить», вы соглашаетесь с условиями обработки персональных данных
+
+
+

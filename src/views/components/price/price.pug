@@ -1,0 +1,21 @@
+mixin price(mixes)
+
+  - const { thead, tbody } = require('views/components/price/data.js')
+  - const css = require('views/components/price/_css.json')
+
+  div(class=css.price class=mixes)
+    img(class=css.iScroll src=require('views/components/price/img/i-scroll.svg') alt='Иконка')
+    h4(class=css.title class='font-gora') Меню
+
+    div(class=css.wrap)
+      table(class=css.table)
+        thead(class='font-gora')
+          tr
+            each title in thead
+              th= title
+        tbody
+          each tr in tbody
+            tr
+              each td in tr
+                td= td
+

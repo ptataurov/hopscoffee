@@ -1,0 +1,9 @@
+mixin footer(mixes)
+
+  - const data = require('views/components/footer/data.js')
+  - const css = require('views/components/footer/_css.json')
+
+  div(class=css.footer class=mixes)
+    span(class=css.copyright) © Хмель и Кофе, 2020
+    img(class=css.logo src=require('public/img/logo.png') alt='Логотип')
+    a(class=css.privacyLink href='#') Политика конфиденциальности

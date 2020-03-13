@@ -1,0 +1,16 @@
+mixin header(mixes)
+
+  - const data = require('views/components/header/data.js')
+  - const css = require('views/components/header/_css.json')
+
+  div(class=css.header class=mixes)
+
+    a(class=css.link class='active' href='#')
+      img(class=css.sublogo src=require('public/img/hops.png') alt='Изображение')
+      span(class=css.logoName class='font-gora') Хмель
+
+    img(class=css.logo src=require('public/img/logo.png') alt='Логотип')
+
+    a(class=css.link href='#')
+      img(class=css.sublogo src=require('public/img/coffee.png') alt='Изображение')
+      span(class=css.logoName class='font-gora') Кофе

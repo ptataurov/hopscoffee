@@ -1,0 +1,135 @@
+.contacts {
+  display: flex;
+
+  @include container;
+
+  > * {
+    width: 50%;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 190px;
+  color: #22201e;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+}
+
+.phone {
+  margin-bottom: 20px;
+  color: #a89479;
+  font-size: 40px;
+}
+
+.address {
+  margin-bottom: 30px;
+  color: #22201e;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.hours-group {
+  display: flex;
+}
+
+.hours-item {
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    margin-right: 80px;
+  }
+}
+
+.hours-name {
+  margin-bottom: 8px;
+  color: #22201e;
+  font-size: 11px;
+}
+
+.hours {
+  margin-bottom: 24px;
+  color: #22201e;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.social {
+  display: flex;
+}
+
+.social-link {
+  max-width: 30px;
+
+  &:first-child {
+    margin-right: 20px;
+  }
+}
+
+.social-icon {
+  width: 100%;
+}
+
+.map {
+  min-height: 560px;
+  background: #eaeaea;
+}
+
+// Global styles
+
+// Media queries
+
+@include less-xl {
+}
+
+@include less-lg {
+  .contacts {
+    flex-direction: column;
+    > * {
+      width: 100%;
+    }
+  }
+
+  .left {
+    margin-bottom: 40px;
+  }
+
+  .title {
+    margin-bottom: 80px;
+  }
+}
+
+@include less-md {
+}
+
+@include less-sm {
+  .phone {
+    font-size: 24px;
+  }
+
+  .hours-group {
+    flex-direction: column;
+  }
+
+  .hours-item {
+    &:first-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Mixes
+
+// Animation

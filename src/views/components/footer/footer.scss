@@ -1,0 +1,75 @@
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background: url('../../../public/img/dot.svg');
+    content: '';
+  }
+
+  @include container;
+}
+
+.copyright {
+  color: rgba(34, 32, 30, 0.5);
+  font-size: 11px;
+}
+
+.logo {
+  max-width: 168px;
+  padding: 40px 0;
+}
+
+.privacy-link {
+  color: rgba(34, 32, 30, 0.5);
+  font-size: 11px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Global styles
+
+// Media queries
+
+@include less-xl {
+}
+
+@include less-lg {
+}
+
+@include less-md {
+  .footer {
+    flex-direction: column;
+  }
+
+  .logo {
+    order: -1;
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+
+  .copyright,
+  .privacy-link {
+    margin-bottom: 8px;
+  }
+
+  .privacy-link {
+    margin-bottom: 16px;
+  }
+}
+
+@include less-sm {
+}
+
+// Mixes
+
+// Animation

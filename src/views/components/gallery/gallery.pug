@@ -1,0 +1,17 @@
+mixin gallery(mixes)
+
+  - const { top, bottom } = require('views/components/gallery/data.js')
+  - const css = require('views/components/gallery/_css.json')
+
+  div(class=css.gallery class=mixes)
+    div(class=css.left)
+      div(class=css.sub)
+        each img in top
+          img(class=css.img src=img alt='Изображение')
+
+      div(class=css.sub)
+       each img in bottom
+          img(class=css.img src=img alt='Изображение')
+
+    div(class=css.right)
+      img(class=css.img src=require('views/components/gallery/img/5.png') alt='Изображение')

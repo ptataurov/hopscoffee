@@ -1,0 +1,75 @@
+.gallery {
+  display: flex;
+
+  @include container;
+}
+
+.img {
+  @include img-resp;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -40px;
+  margin-bottom: -40px;
+
+  .img {
+    max-width: 290px;
+    max-height: 290px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.sub {
+  display: flex;
+}
+
+.right {
+  display: flex;
+  align-self: flex-start;
+  margin-left: 40px;
+}
+
+// Global styles
+
+// Media queries
+
+@include less-xl {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    max-width: 640px;
+  }
+
+  .right {
+    align-self: center;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}
+
+@include less-lg {
+}
+
+@include less-md {
+}
+
+@include less-sm {
+  .left {
+    margin-right: 0;
+    .img {
+      max-width: none;
+      max-height: none;
+    }
+  }
+  .sub {
+    flex-direction: column;
+  }
+}
+
+// Mixes
+
+// Animation

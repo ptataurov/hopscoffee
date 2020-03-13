@@ -1,0 +1,84 @@
+.hero {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (max-width: 947.98px) {
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+  color: #22201e;
+  font-size: 24px;
+}
+
+.text {
+  margin-bottom: 20px;
+  color: #22201e;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.list {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    margin-right: 100px;
+  }
+}
+
+.icon {
+  width: 32px;
+  margin-bottom: 8px;
+}
+
+.item-title {
+  margin-bottom: 8px;
+  color: #a89479;
+  font-weight: 600;
+  font-size: 24px;
+}
+.item-text {
+  color: #22201e;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+// Global styles
+
+// Media queries
+
+@include less-xl {
+}
+
+@include less-lg {
+}
+
+@include less-md {
+}
+
+@include less-sm {
+  .list {
+    flex-direction: column;
+  }
+
+  .item {
+    &:first-child {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+// Mixes
+
+// Animation

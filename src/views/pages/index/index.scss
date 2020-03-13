@@ -1,0 +1,43 @@
+.index-pg {
+}
+
+// Global styles
+
+// Media queries
+
+@include less-xl {
+}
+
+@include less-lg {
+}
+
+@include less-md {
+}
+
+@include less-sm {
+}
+
+// Mixes
+
+.index-pg-hero {
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+
+.index-pg-form-card {
+  margin-bottom: 140px;
+}
+
+.index-pg-gallery {
+  margin-bottom: 100px;
+}
+
+.index-pg-price {
+  margin-bottom: 160px;
+}
+
+.index-pg-contacts {
+  margin-bottom: 100px;
+}
+
+// Animation
