@@ -1,0 +1,55 @@
+.welcome-pg {
+  min-height: 100vh;
+  padding: 0 24px;
+  background: #a89479;
+  background-size: contain;
+
+  @include flex;
+}
+
+.bg {
+  position: relative;
+  max-width: 800px;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+
+  > * {
+    width: 50%;
+  }
+}
+
+.left,
+.right {
+  opacity: 0.2;
+  transition: background 200ms;
+  &:hover {
+    background: lighten($color: #a89479, $amount: 20%);
+  }
+}
+
+// Global styles
+
+// Media queries
+
+@include less-xl {
+}
+
+@include less-lg {
+}
+
+@include less-md {
+}
+
+@include less-sm {
+}
+
+// Mixes
+
+// Animation
