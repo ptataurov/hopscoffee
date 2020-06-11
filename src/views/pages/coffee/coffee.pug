@@ -1,0 +1,44 @@
+extends ~@/layout
+block title
+  title
+
+block content
+
+  - const data = require('./data.js')
+  - const css = require('./_css.json')
+
+  div(id='coffee-pg' class=css.coffeePg)
+
+    +hero(css.coffeePgHero)
+
+    +form-card(css.coffeePgFormCard)
+
+    +gallery(css.coffeePgGallery)
+
+    +price(css.coffeePgPrice)
+
+    +form-card(css.coffeePgFormCard)
+
+    +gallery(css.coffeePgGallery)
+
+    +contacts(css.coffeePgContacts)
+
+    +footer
+
+
+    script(type='text/javascript').
+      ymaps.ready(() => {
+        const myMap = new ymaps.Map('YMapsID', {
+          center: [55.980674, 37.171244],
+          zoom: 17
+        });
+
+        const placemark = new ymaps.Placemark([55.980674, 37.171244], {}, 
+        {
+          iconLayout: 'default#image',
+          iconImageHref: 'src/views/components/contacts/img/placemark.png',
+          iconImageSize: [40, 40],
+        });
+
+        myMap.geoObjects.add(placemark)
+      });

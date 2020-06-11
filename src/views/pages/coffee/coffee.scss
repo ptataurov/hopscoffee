@@ -1,0 +1,43 @@
+.coffee-pg {
+}
+
+// Global styles
+
+// Media queries
+
+@include less-xl {
+}
+
+@include less-lg {
+}
+
+@include less-md {
+}
+
+@include less-sm {
+}
+
+// Mixes
+
+.coffee-pg-hero {
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+
+.coffee-pg-form-card {
+  margin-bottom: 140px;
+}
+
+.coffee-pg-gallery {
+  margin-bottom: 100px;
+}
+
+.coffee-pg-price {
+  margin-bottom: 160px;
+}
+
+.coffee-pg-contacts {
+  margin-bottom: 100px;
+}
+
+// Animation

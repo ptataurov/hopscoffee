@@ -29,7 +29,7 @@ mixin form-card(mixes)
             span(class=css.star) *
 
           div(class=css.inputGroup)
-            input(class=css.input type='text' placeholder='Номер телефона' required)
+            input._input-phone(class=css.input type='text' placeholder='Номер телефона' required)
             label(class=css.label) Номер телефона
             span(class=css.star) *
 
@@ -40,7 +40,10 @@ mixin form-card(mixes)
 
           div(class=css.btnGroup)
             button(class=css.submit type='submit') Отправить
-            span(class=css.notice) Нажимая кнопку «Отправить», вы соглашаетесь с условиями обработки персональных данных
+            span(class=css.agree) Нажимая кнопку «Отправить», вы соглашаетесь с условиями обработки персональных данных
+        
+        p(class=css.notice) Карта клиента предоставляет 10% скидку на всю продукцию и дает возможность учавствовать в розыгрышах и акциях
+
 
 
 
